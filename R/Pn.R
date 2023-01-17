@@ -21,7 +21,7 @@ Pn <- function(c, u, n){
   p0 <- z*factorial(c)*(1-u)/(c*u)^c
 
   # calculation of pns
-  if (n < c & n == c){
+  if (n <= c){
     return(p0*((c*u)^n)/factorial(n))
   }
   else if (n > c){
